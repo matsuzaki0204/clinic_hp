@@ -1,0 +1,73 @@
+<div class = "container">
+
+診療予約受付
+
+<%= form_tag("/reservations/create") do %>
+
+<!--IDではなくメールアドレスにしたほうが良い-->
+<!--<p>ID</p>-->
+<!--<input name="patient_id">-->
+
+<!--<p>password</p>-->
+<!--<input type="password" name="password">-->
+
+<P>受付時間</p>
+<input type="radio" name="time_zone" value="午前">午前
+<input type="radio" name="time_zone" value="午後">午後
+
+
+
+<!--<body bgcolor onLoad="functionName()">-->
+<!--<form name="formName" method="post" action="./pathToProgramFile">-->
+
+<!--[JavaScript部分]-->
+
+// <script type = "text/javascript">
+<!--
+<!--function functionName()-->
+<!--{-->
+var department = document.forms.formName.department; //変数select1を宣言
+var doctor_id = document.forms.formName.doctor_id; //変数select2を宣言
+
+doctor_id.options.length = 0; // 選択肢の数がそれぞれに異なる場合、これが重要
+
+<!--if (department.options[department.selectedIndex].value == "n")-->
+<!--{-->
+<!--doctor_id.options[0] = new Option("Ａ先生");-->
+<!--}-->
+
+<!--else if (department.options[department.selectedIndex].value == "s")-->
+<!--{-->
+<!--doctor_id.options[0] = new Option("Ｂ先生");-->
+<!--}-->
+
+<!--else if (department.options[depatment.selectedIndex].value == "j")-->
+<!--{-->
+<!--doctor_id.options[0] = new Option("Ｃ先生");-->
+<!--}-->
+<!--} -->
+//-->
+<!--</script>-->
+
+<p>診療科</p>
+<select name = "department" onChange="functionName()">
+<option value="" selected="selected">選択してください</option>
+<option value="n">内科</option>
+<option value="s">整形外科</option>
+<option value="j">耳鼻咽喉科</option>
+</select>
+
+
+<!--次のページで医師選択　医師データベース　-->
+<!--<p>医師</p>-->
+<!--<select name = "doctor_id">-->
+
+<!--</select>-->
+
+
+<p></p>
+<input type="submit" value="次へ">
+
+<% end %>
+
+</div>

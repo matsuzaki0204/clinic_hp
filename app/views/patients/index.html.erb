@@ -1,0 +1,25 @@
+<h1>患者情報一覧</h1>
+
+<%  require "date" %>
+<% d = Date.today %>
+
+<% @patients.each do |patient| %>
+
+<table border="1">
+ <tr>
+     <th>No.</th><th>id</th><th>氏名</th><th>カナ氏名</th><th>性別</th><th>生年月日</th><th>メールアドレス</th>
+ </tr>   
+ <tr>
+    <td><%= patient.id %></td>
+    <td><%= patient.patient_id %></td>
+    <td><%= patient.familyname %>  <%= patient.firstname %></td>
+    <td><%= patient.familykana %>  <%= patient.firstkana %></td>
+    <td><%= patient.gender %></td>
+    <td><%= patient.birthday %></td>
+    <td><%= patient.email %></td>
+    
+ </tr>
+</table>
+
+
+<% end %>

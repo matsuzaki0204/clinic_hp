@@ -1,0 +1,66 @@
+<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+
+
+<!--入力ホームが多い　ページを分ける-->
+
+<%= form_tag("/patients/create") do %>
+
+<h1>新規登録</h1>
+
+<div class="signup-form-left">
+    
+
+
+<p>苗字</p>
+<input name="familyname">
+
+<p>名前</p>
+<input name="firstname">
+
+<p>セイ</p>
+<input name="familykana">
+
+<p>メイ</p>
+<input name="firstkana">
+
+<p>性別</p>
+<input type="radio" name="gender" value="男">男
+<input type="radio" name="gender" value="女">女
+
+<p>パスワード</p>
+<input name="password">
+
+<p>メールアドレス</p>
+<input name="email">
+
+<p>生年月日</p>
+<input name="birthday">
+
+</div>
+
+<div class="signup-form-right">
+
+<p>郵便番号</p>
+<input type="text" name="zip01" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','pref01','addr01','addr02');">
+
+<p>都道府県</p>
+<input type="text" name="pref01" size="20">
+
+<p>市区町村</p>
+<input type="text" name="addr01" size="20">
+
+<p>住所</p>
+<input type="text" name="addr02" size="60">
+
+<p>電話番号</p>
+<input name="tel">
+
+<p>携帯番号</p>
+<input>
+
+<br>
+<input type = "submit" value = "新規登録">
+
+</div>
+
+<% end %>

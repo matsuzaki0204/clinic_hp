@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clinic_Hp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+ 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+ 
+  </head>
+
+  <body>
+    <header>
+      <div class = "top-logo">
+        <div class = "top-logo-left">
+          <a href = "/">〇〇〇クリニック</a>
+        </div>
+      
+      <% if session[:patient_id] %>
+        <!--ログイン時-->
+        <ul class="top-logo-right">
+          <li>
+            <%= link_to("MY情報編集","/patients/#{session[:patient_id]}/edit") %>
+          </li>
+          <li>
+            <%= link_to("ログアウト","/logout",{method: "post"}) %>
+          </li>
+      <% else %>
+        <div class = "top-logo-right">
+          <li>
+            <%= link_to("新規登録","/signup") %>
+          </li>
+          <li>
+            <%= link_to("ログイン","/login") %>
+          </li>
+        </div>
+      <% end %>
+      
+      </div>
+      
+    
+    <nav>  
+      <ul class = "menu-ul">
+        <li><a href = "/">ホーム</a></li>
+        <li><a href = "/about">クリニック紹介</a></li>
+        <li><a href = "/treatment">診療のご案内</a></li>
+        <li><a href = "/prophylaxis">健診・予防接種</a></li>
+        <li><a href = "/information">お知らせ</a></li>
+　　  </ul>  
+    </nav>
+    
+    </header>
+    
+    
+    <%= yield %>
+  </body>
+</html>
+

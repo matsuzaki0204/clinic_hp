@@ -1,0 +1,92 @@
+
+<h2>医師情報登録</h2>
+
+<%= form_tag("/doctors/create") do %>  
+
+<p>苗字</p>
+<input name="familyname">
+
+<p>名前</p>
+<input name="firstname">
+
+
+<p>セイ</p>
+<input name="familykana">
+
+<p>メイ</p>
+<input name="firstkana">
+
+<p>性別</p>
+<input type="radio" name="gender" value="男">男
+<input type="radio" name="gender" value="女">女
+
+<p>診療科</p>
+<input type="radio" name="department" value="内科">内科
+<input type="radio" name="department" value="整形外科">整形外科
+<input type="radio" name="department" value="耳鼻咽喉科">耳鼻咽喉科
+
+<p>出勤情報</p>
+<!--<input type="checkbox" name="monday_am" value="月曜日午前">月曜日午前-->
+<!--<input type="checkbox" name="monday_pm" value="月曜日午後">月曜日午後-->
+<!--<input type="checkbox" name="tuesday_am" value="火曜日午前">火曜日午前-->
+<!--<input type="checkbox" name="tuesday_pm" value="火曜日午後">火曜日午後-->
+<!--<input type="checkbox" name="wednesday_am" value="水曜日午前">水曜日午前-->
+<!--<input type="checkbox" name="wednesday_pm" value="水曜日午後">水曜日午後-->
+<!--<input type="checkbox" name="thursday_am" value="木曜日午前">木曜日午前-->
+<!--<input type="checkbox" name="thursday_pm" value="木曜日午後">木曜日午後-->
+<!--<input type="checkbox" name="friday_am" value="金曜日午前">金曜日午前-->
+<!--<input type="checkbox" name="frinday_pm" value="金曜日午後">金曜日午後-->
+<!--<input type="checkbox" name="saturday_am" value="土曜日午前">土曜日午前-->
+<!--<input type="checkbox" name="saturday_pm" value="土曜日午後">土曜日午後-->
+<!--<input type="checkbox" name="sunday_am" value="日曜日午前">日曜日午前-->
+<!--<input type="checkbox" name="sunday_pm" value="日曜日午後">日曜日午後-->
+
+<!--<p>-->
+<!--<input type="hidden" name="monday_am" value="休">-->
+<!--<input type="checkbox" name="monday_am" value="出">月曜日午前-->
+<!--<input type="hidden" name="tuesday_am" value="休">-->
+<!--<input type="checkbox" name="tuesday_am" value="出">火曜日午前-->
+<!--<input type="hidden" name="wednesday_am" value="休">-->
+<!--<input type="checkbox" name="wednesday_am" value="出">水曜日午前-->
+<!--<input type="hidden" name="thursday_am" value="休">-->
+<!--<input type="checkbox" name="thursday_am" value="出">木曜日午前-->
+<!--<input type="hidden" name="friday_am" value="休">-->
+<!--<input type="checkbox" name="friday_am" value="出">金曜日午前-->
+<!--<input type="hidden" name="saturday_am" value="休">-->
+<!--<input type="checkbox" name="saturday_am" value="出">土曜日午前-->
+<!--<input type="hidden" name="sunday_am" value="休">-->
+<!--<input type="checkbox" name="sunday_am" value="出">日曜日午前-->
+<!--</p>-->
+
+<!--<p>-->
+<!--<input type="hidden" name="monday_pm" value="休">-->
+<!--<input type="checkbox" name="monday_pm" value="出">月曜日午後-->
+<!--<input type="hidden" name="tuesday_pm" value="休">-->
+<!--<input type="checkbox" name="tuesday_pm" value="出">火曜日午後-->
+<!--<input type="hidden" name="wednesday_pm" value="休">-->
+<!--<input type="checkbox" name="wednesday_pm" value="出">水曜日午後-->
+<!--<input type="hidden" name="thursday_pm" value="休">-->
+<!--<input type="checkbox" name="thursday_pm" value="出">木曜日午後-->
+<!--<input type="hidden" name="friday_pm" value="休">-->
+<!--<input type="checkbox" name="friday_pm" value="出">金曜日午後-->
+<!--<input type="hidden" name="saturday_pm" value="休">-->
+<!--<input type="checkbox" name="saturday_pm" value="出">土曜日午後-->
+<!--<input type="hidden" name="sunday_pm" value="休">-->
+<!--<input type="checkbox" name="sunday_pm" value="出">日曜日午後-->
+<!--</p>-->
+
+
+<p>有効／無効</p>
+<input type="checkbox" name="enable_disable" value="有">有
+<input type="checkbox" name="enable_disable" value="無">無
+
+<!--<p>資格</p>-->
+<input type="hidden" name="certification" value="医師">
+
+
+<br>
+<input type = "submit" value = "登録">
+
+
+
+<% end %>

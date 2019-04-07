@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  familyname: MyString
+  firstname: MyString
+  familykana: MyString
+  firstkana: MyString
+  gender: MyString
+  department: MyString
+  monday_am: MyString
+  monday_pm: MyString
+  tuesday_am: MyString
+  tuesday_pm: MyString
+  wednesday_am: MyString
+  wednesday_pm: MyString
+  thursday_am: MyString
+  thursday_pm: MyString
+  friday_am: MyString
+  friday_pm: MyString
+  saturday_am: MyString
+  saturday_pm: MyString
+  sunday_am: MyString
+  sunday_pm: MyString
+  enable/disable: MyString
+
+two:
+  familyname: MyString
+  firstname: MyString
+  familykana: MyString
+  firstkana: MyString
+  gender: MyString
+  department: MyString
+  monday_am: MyString
+  monday_pm: MyString
+  tuesday_am: MyString
+  tuesday_pm: MyString
+  wednesday_am: MyString
+  wednesday_pm: MyString
+  thursday_am: MyString
+  thursday_pm: MyString
+  friday_am: MyString
+  friday_pm: MyString
+  saturday_am: MyString
+  saturday_pm: MyString
+  sunday_am: MyString
+  sunday_pm: MyString
+  enable/disable: MyString
